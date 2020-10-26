@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -13,9 +13,13 @@ body {
 }
 
 body, input, button, textarea, select {
-  font: 600 18px Roboto, sans-serif;
+  font: 300 18px Poppins, sans-serif;
 }
 
 input, textarea {
+  outline: none;
+}
+
+button {
   outline: none;
 }
