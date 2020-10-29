@@ -12,7 +12,7 @@ body #presentation {
   height: 100%;
 
   position: absolute;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.4);
 }
 
 body #presentation .presentation-background-img {
@@ -31,9 +31,8 @@ body #presentation .presentation-background-img {
 body #presentation .menu {
   position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
 
   width: 1200px;
   padding: 32px;
@@ -42,10 +41,22 @@ body #presentation .menu {
 
 body #presentation .menu .options {
   display: flex;
+  margin: 0 auto;
 }
 
 body #presentation .menu .options a {
   text-decoration: none;
   color: #fff;
   margin: 0 24px;
+}
+
+body #presentation .menu .icon-options {
+  display: flex;
+  align-items: center;
+}
+
+body #presentation .menu .icon-options ion-icon {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 20px;
 }
