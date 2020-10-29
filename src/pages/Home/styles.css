@@ -48,6 +48,14 @@ body #presentation .menu .options a {
   text-decoration: none;
   color: #fff;
   margin: 0 24px;
+
+  border-bottom: 2px solid transparent;
+
+  transition: border 0.2s;
+}
+
+body #presentation .menu .options a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 body #presentation .menu .icon-options {
@@ -59,4 +67,22 @@ body #presentation .menu .icon-options ion-icon {
   color: #fff;
   margin: 0 8px;
   font-size: 20px;
+
+  cursor: pointer;
+}
+
+#presentation .presentation-text {
+  position: relative;
+  margin-top: 180px;
+
+  color: #fff;
+  text-align: center;
+}
+
+#presentation .presentation-text h1 {
+  font-size: 48px;
+}
+
+#presentation .presentation-text p {
+
 }
