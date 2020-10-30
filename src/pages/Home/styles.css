@@ -150,10 +150,14 @@ body #products .cards .card {
   width: 300px;
   height: 380px;
 
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: top;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column; */
+
+  display: grid;
+  grid-template-rows: 150px 64px 100px 80px;
+  text-align: left;
 }
 
 body #products .cards .card img {
@@ -165,9 +169,11 @@ body #products .cards .card img {
 }
 
 body #products .cards .card h1 {
+  padding: 16px;
   margin-top: 8px;
   font-size: 24px;
   font-weight: 500;
+  text-align: center;
 }
 
 body #products .cards .card p {
@@ -179,6 +185,30 @@ body #products .cards .card a {
   display: flex;
   align-items: center;
   color: #000;
+
+  align-items: center;
+  justify-content: center;
+}
+
+body #products .cards .card a:hover ion-icon {
+  animation: icon 0.5s;
+}
+
+@keyframes icon {
+  25% {
+    transform: translateX(8px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 body #products .cards .card ion-icon {
