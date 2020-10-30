@@ -1,8 +1,26 @@
+body {
+  background-color: #212121;
+  color: white;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body #presentation {
   max-width: 100vw;
   width: 100%;
   max-height: 100vh;
   height: 100%;
+
+  box-sizing: border-box;
+
+  background: url("../../images/initial.jpeg") rgba(0,0,0,0.4);
+}
+
+body #presentation .view {
+  height: 100vh;
 }
 
 .filter {
@@ -13,19 +31,6 @@ body #presentation {
 
   position: absolute;
   background: rgba(0,0,0,0.4);
-}
-
-body #presentation .presentation-background-img {
-  max-width: 100vw;
-  width: 100%;
-  max-height: 100vh;
-  height: 100%;
-
-  object-fit: cover;
-
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 body #presentation .menu {
@@ -61,6 +66,7 @@ body #presentation .menu .options a:hover {
 body #presentation .menu .icon-options {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 body #presentation .menu .icon-options ion-icon {
@@ -69,6 +75,8 @@ body #presentation .menu .icon-options ion-icon {
   font-size: 20px;
 
   cursor: pointer;
+
+  text-align: right;
 }
 
 #presentation .presentation-text {
@@ -100,4 +108,17 @@ body #presentation .menu .icon-options ion-icon {
 #presentation .presentation-text a:hover {
   background: #fff;
   color: #000;
+}
+
+
+
+
+body #products {
+  max-width: 100vw;
+  width: 100%;
+  max-height: 100vh;
+  height: 100%;
+
+  position: relative;
+  box-sizing: border-box;
 }
