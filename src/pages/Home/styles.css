@@ -116,6 +116,7 @@ body #presentation .menu .icon-options ion-icon {
 
 
 
+/* ====== SECOND SECTION ====== */
 
 body #second-section {
   max-width: 100vw;
@@ -239,4 +240,45 @@ body #second-section .cards-link a {
 body #second-section .cards-link a:hover {
   background: #000;
   color: #fff;
+}
+
+
+
+
+
+
+/* ====== THIRD SECTION ======= */
+
+body #third-section {
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+
+  color: black;
+  background: #ad9e8734;
+}
+
+body #third-section .third-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1000px;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+
+  margin: 0 auto;
+}
+
+body #third-section .third-section-content h1 {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: -32px;
 }
