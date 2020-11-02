@@ -13,39 +13,47 @@
 <body>
   <form>
     <div class="card-title">
-      <a href="../SignIn/signin.html"><ion-icon name="arrow-back-outline"></ion-icon></a>
+      <a href="../SignIn/signin.html">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </a>
       <p>Cadastrar</p>
       <div></div>
     </div>
 
     <div class="itens">
       <p> Primeiro Nome </p>
-      <input type="text" placeholder="Primeiro Nome">
+      <input type="text" placeholder="Primeiro Nome" class="first-name-error">
+      <p class="first-name-error"> </p>
     </div>
 
     <div class="itens">
       <p> Ultimo Nome </p>
-      <input type="text" placeholder="Ultimo Nome">
+      <input type="text" placeholder="Ultimo Nome" class="last-name-error">
+      <p class="last-name-error"> </p>
     </div>
 
     <div class="itens">
       <p> Email </p>
-      <input type="text" placeholder="Email">
+      <input type="text" placeholder="Email" class="email-error">
+      <p class="email-error"> </p>
     </div>
 
     <div class="itens">
       <p> Senha </p>
-      <input type="password" placeholder="Senha">
+      <input type="password" placeholder="Senha" class="password">
+      <p class="password-error"> </p>
     </div>
 
     <div class="itens">
       <p> Confirmar Senha </p>
-      <input type="password" placeholder="Confirmar Senha">
+      <input type="password" placeholder="Confirmar Senha" class="password-confirm-error">
+      <p class="password-confirm-error"> </p>
     </div>
-    <button type="submit"> Cadastrar </button>
+    <a id="handle-form"> Cadastrar </a>
   </form>
 
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="../../scripts/signup.js"></script>
 </body>
 
 </html>

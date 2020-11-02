@@ -47,6 +47,9 @@ body form .itens p {
     text-align: left;
 }
 
+body form .itens p + p {
+}
+
 body form .itens input {
     width: 100%;
     border: none;
@@ -58,7 +61,7 @@ body form .itens input::placeholder {
     font-weight: 400;
 }
 
-body form button {
+body form a {
     width: 100%;
     padding: 12px;
     margin: 16px 0;
@@ -70,7 +73,7 @@ body form button {
     cursor: pointer;
 }
 
-body form button:hover {
+body form a:hover {
     background-color: #ffffff9f;
     transition: all 0.2s;
 }
