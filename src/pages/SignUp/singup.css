@@ -40,14 +40,17 @@ body form .itens{
     margin: 10px 0;
 }
 
-body form .itens p {
+body form .itens h1 {
     font-size: 16px;
     margin-bottom: 4px;
     font-weight: 400;
     text-align: left;
 }
 
-body form .itens p + p {
+body form .itens p {
+    height: 16px;
+    color: red;
+    display: none;
 }
 
 body form .itens input {
