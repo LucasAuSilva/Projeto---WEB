@@ -40,11 +40,17 @@ body form .itens{
     margin: 10px 0;
 }
 
-body form .itens p {
+body form .itens h1 {
     font-size: 16px;
     margin-bottom: 4px;
     font-weight: 400;
     text-align: left;
+}
+
+body form .itens p {
+    height: 16px;
+    color: red;
+    display: none;
 }
 
 body form .itens input {
@@ -58,7 +64,7 @@ body form .itens input::placeholder {
     font-weight: 400;
 }
 
-body form button {
+body form a {
     width: 100%;
     padding: 12px;
     margin: 16px 0;
@@ -70,7 +76,7 @@ body form button {
     cursor: pointer;
 }
 
-body form button:hover {
+body form a:hover {
     background-color: #ffffff9f;
     transition: all 0.2s;
 }
