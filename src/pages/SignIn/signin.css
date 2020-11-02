@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(to bottom right, #5a189a, #c77dff);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body form {
+  background-color: #dccce6;
+  color: black;
+  font-weight: 400;
+  padding: 32px;
+  border-radius: 6px;
+  width: 400px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 32px 24px rgba(0,0,0,0.22);
+}
+
+body form p {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+body form .itens{
+  margin: 10px 0;
+}
+
+body form .itens p {
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  text-align: left;
+}
+
+body form .itens input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+body form .itens input::placeholder {
+  font-weight: 400;
+}
+
+body form button {
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  background-color: #ffffff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+body form button:hover {
+  background-color: #ffffff9f;
+  transition: all 0.2s;
+}
+
+body form a {
+  color: #000;
+}
