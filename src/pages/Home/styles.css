@@ -236,7 +236,7 @@ body #second-section .cards-link a {
 
   transition: all 0.2s;
 
-  box-shadow: 0 0px 38px rgba(0, 0, 0, 0.2),
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.2),
   15px 15px 12px rgba(0, 0, 0, 0.02);
 }
 
