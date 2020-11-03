@@ -377,7 +377,7 @@ body #client-depositions .depositions .deposition p {
   width: 1000px;
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 48px 0;
 }
 
 
@@ -421,8 +421,8 @@ body #client-depositions .depositions .deposition p {
   color: #000;
 }
 
-#contact-infos .contact-infos-content .info-cards .info-card.routes:hover #arrow {
-  transition: icon 0.2s;
+#contact-infos .contact-infos-content .info-cards a:hover .infos.routes #arrow {
+  animation: icon 0.5s;
 }
 
 #contact-infos .contact-infos-content .info-cards .info-card img {
