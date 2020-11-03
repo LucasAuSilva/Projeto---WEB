@@ -7,6 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="../../global/styles.css">
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -136,8 +139,59 @@
       </div>
     </div>
   </section>
-  
-  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-</body>
 
+  <section id="contact-infos">
+    <h1>Informações de contato</h1>
+
+    <div class="contact-infos-content">
+      <div id="map">
+          <iframe width="600" height="500" src="https://maps.google.com/maps?q=empire%20state%20buil&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+        <style>
+          .mapouter{position:relative;text-align:right;height:500px;width:600px;}
+        </style>
+      </iframe>
+      </div>
+  
+      <div class="info-cards">
+        <div class="info-card">
+          <img src="../../images/phone.svg" alt="Ícone de telefone" />
+
+          <div class="infos">
+            <span>Telefone</span>
+            <p>(41) 4002-8922</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <img src="../../images/mail.svg" alt="Ícone de e-mail" />
+
+          <div class="infos">
+            <span>Email</span>
+            <p>oi@biruliro.com.br</p>
+          </div>
+        </div>
+
+        <a 
+          class="info-card routes"
+          target="_blank"
+          href="https://www.google.com/maps/dir//40.7484405,-73.9856644/@40.74844,-73.985664,15z?hl=pt-BR"
+        >
+          <img src="../../images/map-pin.svg" alt="Ícone de e-mail" />
+
+          <div class="infos routes">
+            <div>
+              <span>Ver rotas</span>
+              <p>(Google Maps)</p>
+            </div>
+            <img src="../../images/arrow-right.svg" alt="Flecha para a direita" id="arrow" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+</body>
 </html>
