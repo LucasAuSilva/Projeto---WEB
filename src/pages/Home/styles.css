@@ -402,6 +402,8 @@ body #client-depositions .depositions .deposition p {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+
+  display: flex;
 }
 
 #contact-infos #map iframe {
@@ -410,3 +412,32 @@ body #client-depositions .depositions .deposition p {
   border: 0;
   border-radius: 16px;
 }
+
+#contact-infos .contact-infos-content .info-cards {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+#contact-infos .contact-infos-content .info-cards .info-card {
+  width: 450px;
+  height: 150px;
+  border-radius: 16px;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+}
+
+#contact-infos .contact-infos-content .info-cards .info-card img {
+  margin: 0 48px;
+  width: 32px;
+}
+
+#contact-infos .contact-infos-content .info-cards .info-card span {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
