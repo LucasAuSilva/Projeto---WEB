@@ -200,23 +200,6 @@ body #second-section .cards .card a:hover ion-icon {
   animation: icon 0.5s;
 }
 
-@keyframes icon {
-  25% {
-    transform: translateX(8px);
-  }
-
-  50% {
-    transform: translateX(0px);
-  }
-
-  75% {
-    transform: translateX(8px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
 body #second-section .cards .card ion-icon {
   color: #000;
   margin-left: 8px;
@@ -401,6 +384,7 @@ body #client-depositions .depositions .deposition p {
 #contact-infos .contact-infos-content {
   max-width: 1000px;
   width: 100%;
+  height: 400px;
   margin: 0 auto;
 
   display: flex;
@@ -408,27 +392,37 @@ body #client-depositions .depositions .deposition p {
 
 #contact-infos #map iframe {
   width: 500px;
-  height: 400px;
+  height: 100%;
   border: 0;
   border-radius: 16px;
 }
 
 #contact-infos .contact-infos-content .info-cards {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 
   width: 100%;
+
+  margin-left: 32px;
 }
 
 #contact-infos .contact-infos-content .info-cards .info-card {
   width: 450px;
-  height: 150px;
+  height: 120px;
   border-radius: 16px;
 
   background: #fff;
 
   display: flex;
   align-items: center;
+
+  text-decoration: none;
+  color: #000;
+}
+
+#contact-infos .contact-infos-content .info-cards .info-card.routes:hover #arrow {
+  transition: icon 0.2s;
 }
 
 #contact-infos .contact-infos-content .info-cards .info-card img {
@@ -436,8 +430,40 @@ body #client-depositions .depositions .deposition p {
   width: 32px;
 }
 
+#contact-infos .contact-infos-content .info-cards .info-card .infos.routes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+#contact-infos .contact-infos-content .info-cards .info-card .infos.routes img {
+  width: 22px;
+  margin-left: 16px;
+}
+
 #contact-infos .contact-infos-content .info-cards .info-card span {
   font-size: 24px;
   margin-bottom: 8px;
 }
 
+
+
+
+@keyframes icon {
+  25% {
+    transform: translateX(8px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
