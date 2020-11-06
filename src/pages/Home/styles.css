@@ -517,3 +517,37 @@ body #client-depositions .depositions .deposition p {
 #footer .footer-content .social-media-links a:hover {
   border-bottom: 2px solid #000;
 }
+
+
+
+
+
+
+
+
+
+/* ====== RESPONSIVITY ====== */
+@media (max-width: 1200px) {
+  #presentation .menu,
+  #second-section,
+  #third-section,
+  #client-depositions,
+  #contact-infos,
+  #footer {
+    max-width: 90vw;
+    width: 100%;
+  }
+
+  body #second-section .cards {
+    width: 950px;
+  }
+
+  body #second-section .cards .card {
+    width: 280px;
+  }
+
+  #footer .footer-content {
+    max-width: 90vw;
+    width: 100%;
+  }
+}
