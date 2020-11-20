@@ -7,8 +7,8 @@ bLogin.addEventListener("click", () => {
     let error = document.getElementsByTagName("p")[3]
 
     for (let i = 0; i < localStorage.length; i++) {
-        dados = JSON.parse(localStorage.getItem(i + 1))
-        if (dados[2] == inEmail.value && dados[3] == inSenha.value) {
+        dados = JSON.parse(localStorage.getItem("register"))
+        if (dados[1][2] == inEmail.value && dados[1][3] == inSenha.value) {
             error.style.display = "none"
             window.location.href = "../Home/index.html"
         } else {
