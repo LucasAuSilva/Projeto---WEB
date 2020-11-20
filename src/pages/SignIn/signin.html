@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../global/styles.css">
+  <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+  <form onsubmit="return false">
+    <p> Realizar Login </p>
+
+    <div class="itens">
+      <p> Email </p>
+      <input type="text" placeholder="Email" id="input-email">
+    </div>
+
+    <div class="itens">
+      <p> Senha </p>
+      <input type="password" placeholder="Senha" id="input-senha">
+    </div>
+
+    <p class="error-msg"> Login Inexistente, por favor cadastre-se </p>
+    <button type="submit" id="botaoLogin">Login</button>
+
+    <a href="../SignUp/signup.html">Esqueci minha senha</a>
+  </form>
+
+  <script src="../../scripts/signin.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>

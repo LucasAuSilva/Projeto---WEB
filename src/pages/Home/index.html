@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watches</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../../global/styles.css">
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section id="presentation">
+    <div class="view">
+      <div class="filter"></div>
+
+      <div class="menu">
+        <p>LOGO</p>
+
+        <div class="options">
+          <a href="#">Home</a>
+          <a href="#">Produtos</a>
+          <a href="#">Sobre</a>
+        </div>
+
+        <div class="icon-options">
+          <ion-icon name="log-in-outline"></ion-icon>
+          <ion-icon name="search-outline"></ion-icon>
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="presentation-text">
+        <h1>Os melhores produtos</h1>
+
+        <p>Seu estilo é a nossa marca</p>
+
+        <a href="../SignUp/signup.html">Cadastre-se</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="second-section">
+    <div class="background"></div>
+
+    <h1>Confira nossos produtos</h1>
+
+    <div class="cards">
+      <div class="card">
+        <img src="../../images/smart-watch.jpg" alt="Apple Watch">
+
+        <div>
+          <h1>Smart Watches</h1>
+          <p>Confira o que tem de mais novo na tecnologia! </p>
+        </div>
+
+        <a href="#">Ver mais <ion-icon name="arrow-forward-outline"></ion-icon></a>
+      </div>
+
+      <div class="card">
+        <img src="../../images/analogic-watch.jpg" alt="Apple Watch">
+
+        <div>
+          <h1>Relógios analógicos</h1>
+          <p>A melhor definição de classe e beleza</p>
+        </div>
+
+        <a href="#">Ver mais <ion-icon name="arrow-forward-outline"></ion-icon></a>
+      </div>
+
+      <div class="card">
+        <img src="../../images/digital-watch.jpg" alt="Apple Watch">
+
+        <div>
+          <h1>Relógios digitais</h1>
+          <p>A simplicidade e beleza em um lugar só. Os melhores produtos com diversas variedades.</p>
+        </div>
+
+        <a href="#">Ver mais <ion-icon name="arrow-forward-outline"></ion-icon></a>
+      </div>
+    </div>
+
+    <div class="cards-link">
+      <a href="#">Ver todas as opções!</a>
+    </div>
+  </section>
+
+  <section id="third-section">
+    <div class="third-section-content">
+      <h1>Ainda na dúvida?</h1>
+
+      <iframe src="https://player.vimeo.com/video/474466512?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+        frameborder="0" width="940" height="660" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </iframe>
+    </div>
+  </section>
+
+  <section id="client-depositions">
+    <img src="../../images/wave.svg" alt="" class="background">
+
+    <div class="depositions">
+      <div class="first-column">
+        <div class="deposition">
+          <img src="../../images/man-one.svg" alt="Foto de homem 1">
+          <div>
+            <h1>Sérgio Morais</h1>
+            <p>"Não existe nada no mercado que seja igual à isso"</p>
+          </div>
+        </div>
+
+        <div class="deposition">
+          <img src="../../images/woman-one.svg" alt="Foto de homem 1">
+          <div>
+            <h1>Cleudenice da Silva</h1>
+            <p>"Sem dúvida as melhores compras que eu fiz. Tudo muito rápido e com qualidade alta"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-column">
+        <div class="deposition">
+          <img src="../../images/woman-two.svg" alt="Foto de homem 1">
+          <div>
+            <h1>Josefina Reis</h1>
+            <p>"Não tem como se arrepender. Entrega rápida e produtos muito bem embalados"</p>
+          </div>
+        </div>
+
+        <div class="deposition">
+          <img src="../../images/man-two.svg" alt="Foto de homem 1">
+          <div>
+            <h1>Wagner Lopes</h1>
+            <p>"Com certeza a melhor loja virtual que já criaram. Nunca vi nada igual"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-infos">
+    <h1>Informações de contato</h1>
+
+    <div class="contact-infos-content">
+      <div id="map">
+        <iframe width="600" height="500"
+          src="https://maps.google.com/maps?q=empire%20state%20buil&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          scrolling="no" marginheight="0" marginwidth="0" allow="autoplay">
+        </iframe>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 600px;
+          }
+        </style>
+        </iframe>
+      </div>
+
+      <div class="info-cards">
+        <a class="info-card routes" target="_blank"
+          href="https://www.google.com/maps/dir//40.7484405,-73.9856644/@40.74844,-73.985664,15z?hl=pt-BR">
+          <img src="../../images/map-pin.svg" alt="Ícone de localização" />
+
+          <div class="infos routes">
+            <div>
+              <span>Ver rotas</span>
+              <p>(Google Maps)</p>
+            </div>
+            <img src="../../images/arrow-right.svg" alt="Flecha para a direita" id="arrow" />
+          </div>
+        </a>
+
+        <div class="info-card">
+          <img src="../../images/phone.svg" alt="Ícone de telefone" />
+
+          <div class="infos">
+            <span>Telefone</span>
+            <p>(41) 4002-8922</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <img src="../../images/mail.svg" alt="Ícone de e-mail" />
+
+          <div class="infos">
+            <span>Email</span>
+            <p>oi@biruliro.com.br</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="footer-content">
+      <div class="infos">
+        <h1>LOGO</h1>
+        <p>Copyright © 2020 | Todos os direitos reservados</p>
+      </div>
+
+      <div class="social-media-links">
+        <a href=""><img src="../../images/logo-facebook.svg" alt="" srcset=""></a>
+        <a href=""><img src="../../images/logo-linkedin.svg" alt="" srcset=""></a>
+        <a href=""><img src="../../images/logo-instagram.svg" alt="" srcset=""></a>
+        <a href=""><img src="../../images/logo-pinterest.svg" alt="" srcset=""></a>
+        <a href=""><img src="../../images/logo-twitter.svg" alt="" srcset=""></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>
