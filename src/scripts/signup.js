@@ -1,6 +1,7 @@
 
 const submitButton = document.getElementById("handle-form")
 const inputs = document.getElementsByTagName('input')
+const register = JSON.parse(localStorage.getItem("register"))
 
 function verificaInputs() {
     const cont = inputs.length
@@ -38,15 +39,23 @@ submitButton.addEventListener('click', () => {
 
     let empty = verificaInputs();
     let senhas = verificaSenhas();
+    let register = JSON.parse(localStorage.getItem("register"))
 
     if (!empty && senhas) {
-        let register = []
+        let listInputs = []
         let dado = []
         for (x = 0; cont > x; x++) {
-            register.push(inputs[x].value)
+            listInputs.push(inputs[x].value)
         }
-        dado = JSON.stringify(register)
-        localStorage.setItem(localStorage.length + 1, dado)
+        dado.push(listInputs)
+        if (register == null || register.length == 0)
+            localStorage.setItem("register", JSON.stringify(dado))
+        else {
+            for (x = 0; x < register.length; x++) {
+                dado.push(register[x])
+                localStorage.setItem("register", JSON.stringify(dado))
+            }
+        }
         window.location.href = "../SignIn/signin.html"
     }
 })
