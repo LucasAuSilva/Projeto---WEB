@@ -10,24 +10,27 @@
 </head>
 
 <body>
-  <form>
+  <form onsubmit="return false">
     <p> Realizar Login </p>
 
     <div class="itens">
       <p> Email </p>
-      <input type="text" placeholder="Email">
+      <input type="text" placeholder="Email" id="input-email">
     </div>
 
     <div class="itens">
       <p> Senha </p>
-      <input type="password" placeholder="Senha">
+      <input type="password" placeholder="Senha" id="input-senha">
     </div>
 
-    <button type="submit">Login</button>
+    <p class="error-msg"> Login Inexistente, por favor cadastre-se </p>
+    <button type="submit" id="botaoLogin">Login</button>
 
     <a href="../SignUp/signup.html">Esqueci minha senha</a>
   </form>
 
+  <script src="../../scripts/signin.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
+
 </html>
