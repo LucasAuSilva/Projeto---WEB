@@ -4,25 +4,25 @@ const addButton = document.querySelectorAll(".add")
 const cont = document.querySelector("#contagem")
 const products = [{
         name: "BLA",
-        tag: "blazinho",
+        tag: "#1",
         price: 100,
         qtd: 0
     },
     {
         name: "VRAU",
-        tag: "vrauzinho",
+        tag: "#2",
         price: 50,
         qtd: 0
     },
     {
         name: "VRII",
-        tag: "vriizinho",
+        tag: "#3",
         price: 20,
         qtd: 0
     },
     {
         name: "VRUUMMM",
-        tag: "vrummzinho",
+        tag: "#4",
         price: 500,
         qtd: 0
     }
@@ -32,10 +32,10 @@ for (let i = 0; i < addButton.length; i++) {
     addButton[i].addEventListener("click", () => {
         contCart()
         insideCart(products[i])
-        totalPrice()
     })
 }
 
+displayCart()
 loadCartCount()
 
 function contCart() {
@@ -84,3 +84,39 @@ function insideCart(product) {
 
 
 // **** CART  - JAVASCRIPT **** //
+
+function displayCart() {
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    let productContainer = document.querySelector(".products")
+
+    if (cart && productContainer) {
+        productContainer.innerHTML = " ";
+        Object.values(cart).map(item => {
+            productContainer.innerHTML += `
+            <div class="product">
+                <ion-icon name="close-circle"></ion-icon>
+                <img src="../images/${item.tag}.jpg">
+                <span>${item.name}</span>
+            </div>
+            <div class="price">R$${item.price} </div>
+            <div class="quantity">
+                <span>${item.qtd}</span>
+            </div>
+            <div class="total">
+                R$${item.qtd * item.price}
+            </div>
+            `
+        })
+
+        productContainer.innerHTML += `
+            <div class="basketTotalContainer">
+                <h4 class="basketTotalTitle">
+                    Basket Total
+                </h4>
+                <h4 class="basketTotal">
+                    R$${500}
+                </h4>
+            </div>
+        `
+    }
+}
