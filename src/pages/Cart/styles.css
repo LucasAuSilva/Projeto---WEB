@@ -122,6 +122,14 @@ body #presentation .menu .icon-options ion-icon {
     padding-bottom: 50px;
 }
 
+#second-section .products-container ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 #second-section .product-header {
     width: 100%;
     max-width: 650px;
@@ -137,20 +145,61 @@ body #presentation .menu .icon-options ion-icon {
 
 #second-section .price {
     width: 15%;
+    border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
 }
 
 #second-section .quantity {
     width: 30%;
+    border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
 }
 
 #second-section .total {
     width: 10%;
+    border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
+}
+
+#second-section .product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+#second-section .product ion-icon {
+    cursor: pointer;
+}
+
+#second-section .products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#section-second .products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
 }
 
 
