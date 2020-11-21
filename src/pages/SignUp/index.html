@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../../global/styles.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <section id="menu">
+    <div class="menu">
+      <p>LOGO</p>
+
+      <div class="options">
+        <a href="../Home/index.html">Home</a>
+        <a href="../Products/index.html">Produtos</a>
+        <a href="../About/index.html">Sobre</a>
+      </div>
+
+      <div class="icon-options">
+        <ion-icon name="log-in-outline"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="cart-outline"></ion-icon>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-area">
+    <form>
+      <div class="card-title">
+        <a href="../SignIn/signin.html">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </a>
+        <p>Cadastrar</p>
+        <div></div>
+      </div>
+
+      <div class="itens">
+        <h1> Primeiro Nome </h1>
+        <input type="text" placeholder="Primeiro Nome">
+        <p> <strong> Campo Obrigatório </strong> </p>
+      </div>
+
+      <div class="itens">
+        <h1> Ultimo Nome </h1>
+        <input type="text" placeholder="Ultimo Nome">
+        <p> <strong> Campo Obrigatório </strong> </p>
+      </div>
+
+      <div class="itens">
+        <h1> Email </h1>
+        <input type="text" placeholder="Email">
+        <p> <strong> Campo Obrigatório </strong> </p>
+      </div>
+
+      <div class="itens">
+        <h1> Senha </h1>
+        <input type="password" placeholder="Senha">
+        <p> <strong> Campo Obrigatório </strong> </p>
+      </div>
+
+      <div class="itens">
+        <h1> Confirmar Senha </h1>
+        <input type="password" placeholder="Confirmar Senha">
+        <p id="confirm"> <strong> Campo Obrigatório </strong> </p>
+      </div>
+
+      <a id="handle-form"> Cadastrar </a>
+    </form>
+  </section>
+
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="../../scripts/signup.js"></script>
+</body>
+
+</html>

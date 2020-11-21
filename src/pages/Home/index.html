@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="../../global/styles.css">
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <script type="text/javascript" src="../../scripts/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 
@@ -21,9 +23,9 @@
         <p>LOGO</p>
 
         <div class="options">
-          <a href="#">Home</a>
-          <a href="#">Produtos</a>
-          <a href="#">Sobre</a>
+          <a href="../Home/index.html">Home</a>
+          <a href="../Products/index.html">Produtos</a>
+          <a href="../About/index.html">Sobre</a>
         </div>
 
         <div class="icon-options">
@@ -38,7 +40,7 @@
 
         <p>Seu estilo é a nossa marca</p>
 
-        <a href="../SignUp/signup.html">Cadastre-se</a>
+        <a href="../SignUp/index.html">Cadastre-se</a>
       </div>
     </div>
   </section>
@@ -92,8 +94,7 @@
     <div class="third-section-content">
       <h1>Ainda na dúvida?</h1>
 
-      <iframe src="https://player.vimeo.com/video/474466512?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        frameborder="0" width="940" height="660" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/474466512?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" width="940" height="660" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </iframe>
     </div>
   </section>
@@ -145,7 +146,7 @@
 
     <div class="contact-infos-content">
       <div id="map">
-        <iframe width="600" height="500"
+        <!-- <iframe width="600" height="500"
           src="https://maps.google.com/maps?q=empire%20state%20buil&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
           scrolling="no" marginheight="0" marginwidth="0" allow="autoplay">
         </iframe>
@@ -157,12 +158,11 @@
             width: 600px;
           }
         </style>
-        </iframe>
+        </iframe> -->
       </div>
 
       <div class="info-cards">
-        <a class="info-card routes" target="_blank"
-          href="https://www.google.com/maps/dir//40.7484405,-73.9856644/@40.74844,-73.985664,15z?hl=pt-BR">
+        <a class="info-card routes" target="_blank" href="https://www.google.com/maps/dir//40.7484405,-73.9856644/@40.74844,-73.985664,15z?hl=pt-BR">
           <img src="../../images/map-pin.svg" alt="Ícone de localização" />
 
           <div class="infos routes">
