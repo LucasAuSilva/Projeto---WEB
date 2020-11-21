@@ -1,4 +1,3 @@
-
 const submitButton = document.getElementById("handle-form")
 const inputs = document.getElementsByTagName('input')
 const register = JSON.parse(localStorage.getItem("register"))
@@ -39,7 +38,6 @@ submitButton.addEventListener('click', () => {
 
     let empty = verificaInputs();
     let senhas = verificaSenhas();
-    let register = JSON.parse(localStorage.getItem("register"))
 
     if (!empty && senhas) {
         let listInputs = []

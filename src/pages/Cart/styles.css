@@ -64,6 +64,10 @@ body #presentation .menu .icon-options {
     justify-content: flex-end;
 }
 
+body #presentation .menu .icon-options p {
+    display: none;
+}
+
 body #presentation .menu .icon-options ion-icon {
     color: #000;
     margin: 0 8px;
