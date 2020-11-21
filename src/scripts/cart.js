@@ -1,6 +1,7 @@
 // **** PRODUCTS - JAVASCRIPT **** //
 
 const addButton = document.querySelectorAll(".add")
+const cont = document.querySelector("#contagem")
 const products = [{
         name: "BLA",
         tag: "blazinho",
@@ -27,16 +28,39 @@ const products = [{
     }
 ]
 
-console.log(products)
-
 for (let i = 0; i < addButton.length; i++) {
     addButton[i].addEventListener("click", () => {
+        contCart()
         insideCart(products[i])
     })
 }
 
+loadCartCount()
+
+function contCart() {
+    let contItens = parseInt(localStorage.getItem('contCart'))
+
+    if (contItens) {
+        localStorage.setItem('contCart', contItens + 1)
+        cont.innerHTML = contItens + 1
+    } else {
+        cont.style.display = "initial"
+        localStorage.setItem('contCart', 1)
+        cont.innerHTML = 1
+    }
+}
+
+function loadCartCount() {
+    let contItens = localStorage.getItem('contCart')
+
+    if (contCart) {
+        cont.innerHTML = contItens
+        cont.style.display = "initial"
+    }
+}
+
 function insideCart(product) {
-    let cart = JSON.parse(localStorage.getItem("Cart"))
+    let cart = JSON.parse(localStorage.getItem("cart"))
     let cartItens = cart
 
     if (cartItens == null) {
@@ -55,7 +79,7 @@ function insideCart(product) {
     }
 
 
-    localStorage.setItem("Cart", JSON.stringify(cartItens))
+    localStorage.setItem("cart", JSON.stringify(cartItens))
 }
 
 
