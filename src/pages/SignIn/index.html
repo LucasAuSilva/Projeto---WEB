@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../global/styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section id="menu">
+    <div class="menu">
+      <p>LOGO</p>
+
+      <div class="options">
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre</a>
+      </div>
+
+      <div class="icon-options">
+        <ion-icon name="log-in-outline"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="cart-outline"></ion-icon>
+      </div>
+    </div>
+  </section>
+
+  <section id="form-area">
+    <form onsubmit="return false">
+      <p> Realizar Login </p>
+
+      <div class="itens">
+        <p> Email </p>
+        <input type="text" placeholder="Email" id="input-email">
+      </div>
+
+      <div class="itens">
+        <p> Senha </p>
+        <input type="password" placeholder="Senha" id="input-senha">
+      </div>
+
+      <p class="error-msg"> Login Inexistente, por favor cadastre-se </p>
+      <button type="submit" id="botaoLogin">Login</button>
+
+      <a href="../SignUp/signup.html">Esqueci minha senha</a>
+    </form>
+  </section>
+
+  <script src="../../scripts/signin.js"></script>
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>
