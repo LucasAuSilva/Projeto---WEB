@@ -3,8 +3,61 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+body #menu .menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  width: 1200px;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+body #menu .menu .options {
+  display: flex;
+  margin: 0 auto;
+}
+
+body #menu .menu .options a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 24px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+body #menu .menu .options a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+body #menu .menu .icon-options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+body #menu .menu .icon-options ion-icon {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: right;
+}
+
+body .form-area {
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
+}
+
+body #form-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 body form {
@@ -14,7 +67,7 @@ body form {
   padding: 32px;
   border-radius: 6px;
   width: 400px;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 32px 24px rgba(0,0,0,0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 32px 24px rgba(0, 0, 0, 0.22);
 }
 
 body form p {
@@ -32,7 +85,7 @@ body form p.error-msg {
   color: red;
 }
 
-body form .itens{
+body form .itens {
   margin: 10px 0;
 }
 
@@ -73,4 +126,5 @@ body form button:hover {
 
 body form a {
   color: #000;
+  margin-top: 16px;
 }
