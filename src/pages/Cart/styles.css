@@ -106,6 +106,54 @@ body #presentation .menu .icon-options ion-icon {
 }
 
 
+/* ====== SECOND SECTION ====== */
+
+#second-section {
+    color: #000;
+}
+
+#second-section .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#second-section .product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+#second-section .product-title {
+    width: 45%;
+}
+
+#second-section .price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+#second-section .quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#second-section .total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
 /* ====== FOOTER ====== */
 
 #footer {

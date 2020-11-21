@@ -32,6 +32,7 @@ for (let i = 0; i < addButton.length; i++) {
     addButton[i].addEventListener("click", () => {
         contCart()
         insideCart(products[i])
+        totalPrice()
     })
 }
 
@@ -77,7 +78,6 @@ function insideCart(product) {
     } else {
         cartItens[product.tag].qtd += 1;
     }
-
 
     localStorage.setItem("cart", JSON.stringify(cartItens))
 }
