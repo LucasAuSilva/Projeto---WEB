@@ -565,7 +565,7 @@ body #client-depositions .depositions .deposition p {
     max-width: 90vw;
     margin: 0 auto;
   }
-  #contact-infos #map iframe {
+  #contact-infos #map {
     width: 100%;
     height: 300px;
     border: 0;
@@ -614,6 +614,18 @@ body #client-depositions .depositions .deposition p {
 }
 
 @media (max-width: 680px) {
+  body #presentation .view .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+  }
+  body #presentation .view .menu .options {
+    flex-direction: column;
+    text-align: center;
+    margin: 24px;
+  }
   body #second-section {
     max-height: initial;
     min-height: initial;
@@ -667,8 +679,8 @@ body #client-depositions .depositions .deposition p {
     margin-top: 0;
   }
   body #third-section .third-section-content iframe {
-    width: 540px;
-    height: 260px;
+    width: 480px;
+    height: 200px;
   }
   body #third-section {
     background: linear-gradient( 0deg, #E6E5E3 0%, #F5F8FA 100%)
