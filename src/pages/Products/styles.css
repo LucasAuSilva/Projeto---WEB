@@ -216,17 +216,18 @@ body #smart-watches .lines {
 }
 
 body #smart-watches .lines .line {
-  display: none;
-}
-
-body #smart-watches .lines .line.active {
   background: #fff;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 150px;
-  display: initial;
+  display: none;
+  margin-top: 8px;
+}
+
+body #smart-watches .lines .line.active {
+  display: flex;
 }
 
 body #smart-watches .lines .line img {
