@@ -78,11 +78,11 @@ function addContent(position) {
     lineTwo.classList.add('active');
     lineThree.classList.remove('active');
 
-    document.getElementById('line-one-img').src = '../../images/digital-1.jpeg';
+    document.getElementById('line-one-img').src = '../../images/digital-1.jpg';
     document.getElementById('line-one-title').innerHTML = 'X-Games Master Boy';
     document.getElementById('line-one-price').innerHTML = 'R$ 349,00';
 
-    document.getElementById('line-two-img').src = '../../images/digital-2.jpeg';
+    document.getElementById('line-two-img').src = '../../images/digital-2.jpg';
     document.getElementById('line-two-title').innerHTML = 'Skmei Sport';
     document.getElementById('line-two-price').innerHTML = 'R$ 189,00';
   }
