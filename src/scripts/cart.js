@@ -1,32 +1,33 @@
 // **** PRODUCTS - JAVASCRIPT **** //
 
-const addButton = document.querySelectorAll(".add")
+const addButton = document.querySelectorAll('[name="add"]')
+const category = document.querySelectorAll('.option-block')
 const cont = document.querySelector("#contagem")
 const products = [{
         name: "Apple Watch",
         tag: "apple-watch-sell.jpeg",
-        price: 4.059,
+        price: 4059.00,
         qtd: 0
     },
     {
         name: "Thunder Black",
         tag: "thunder-black.jpg",
-        price: 1899.090,
+        price: 1899.90,
         qtd: 0
     },
     {
         name: "Curren M2",
         tag: "black-curren-m2.jpg",
-        price: 710.090,
-        qtd: 0
-    },
-    {
-        name: "VRUUMMM",
-        tag: " ",
-        price: 500,
+        price: 710.09,
         qtd: 0
     }
 ]
+
+for (let x = 0; x < category.length; x++) {
+    category[x].addEventListener("click", () => {
+        categoryOpen(x, products)
+    })
+}
 
 for (let i = 0; i < addButton.length; i++) {
     addButton[i].addEventListener("click", () => {
@@ -93,6 +94,64 @@ function totalPrice(product) {
     }
 
     return total
+}
+
+function categoryOpen(position, products) {
+    if (products.length > 3) {
+        products = products.splice(3,3)
+    }
+    if (position == 0) {
+        products.push({
+            name: "Apple Watch",
+            tag: "apple-watch-sell.jpeg",
+            price: 4059.00,
+            qtd: 0
+        },
+        {
+            name: "Samsung SmartWatch",
+            tag: "samsumg-watch.jpg",
+            price: 899.00,
+            qtd: 0
+        },
+        {
+            name: "Samsumg SmartWatch",
+            tag: "miband.jpg",
+            price: 300.00,
+            qtd: 0
+        })
+    } else if (position == 1) {
+        products.push({
+            name: "Geneva Romans",
+            tag: "geneva-watch.jpg",
+            price: 2339.00,
+            qtd: 0
+        },
+        {
+            name: "Thunder Black",
+            tag: "thunder-black.jpg",
+            price: 1899.00,
+            qtd: 0
+        },
+        {
+            name: "Curren Olt Town",
+            tag: "curren-old-town.jpg",
+            price: 3720.00,
+            qtd: 0
+        })
+    } else if (position == 2) {
+        products.push({
+            name: "X-Games Master Boy",
+            tag: "digital-1.jpg",
+            price: 349.00,
+            qtd: 0
+        },
+        {
+            name: "Skmei Sport",
+            tag: "digital-2.jpg",
+            price: 189.00,
+            qtd: 0
+        })
+    }
 }
 
 
