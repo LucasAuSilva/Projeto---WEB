@@ -73,6 +73,18 @@ function addContent(position) {
     document.getElementById('line-three-img').src = '../../images/curren-old-town.jpg';
     document.getElementById('line-three-title').innerHTML = 'Curren Old Town';
     document.getElementById('line-three-price').innerHTML = 'R$ 3.730,00';
+  } else if (position == 'three') {
+    lineOne.classList.add('active');
+    lineTwo.classList.add('active');
+    lineThree.classList.remove('active');
+
+    document.getElementById('line-one-img').src = '../../images/digital-1.jpeg';
+    document.getElementById('line-one-title').innerHTML = 'X-Games Master Boy';
+    document.getElementById('line-one-price').innerHTML = 'R$ 349,00';
+
+    document.getElementById('line-two-img').src = '../../images/digital-2.jpeg';
+    document.getElementById('line-two-title').innerHTML = 'Skmei Sport';
+    document.getElementById('line-two-price').innerHTML = 'R$ 189,00';
   }
 }
 
