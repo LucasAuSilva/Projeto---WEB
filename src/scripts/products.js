@@ -2,6 +2,8 @@ const optionBlockOne = document.getElementById('option-block-one');
 const optionBlockTwo = document.getElementById('option-block-two');
 const optionBlockThree = document.getElementById('option-block-three');
 
+const lineOne = document.getElementById('line-one');
+
 // optionBlockOne.addEventListener('click', () => {
 //   console.log("oi")
 //   optionBlockOne.classList.add('active');
@@ -11,10 +13,13 @@ function addColor(position) {
   console.log(position)
   if (position == 'one') {
     if (optionBlockOne.classList.contains('active')) {
-      console.log("aoba")
       optionBlockOne.classList.remove('active');
     } else {
       optionBlockOne.classList.add('active');
+      lineOne.classList.add('active');
+      document.getElementById('line-one-img').src = '../../images/apple-watch-sell.jpeg';
+      document.getElementById('line-one-title').innerHTML = 'Apple Watch';
+      document.getElementById('line-one-price').innerHTML = 'R$ 4.059,00';
     }
 
     optionBlockTwo.classList.remove('active');
