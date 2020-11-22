@@ -3,26 +3,26 @@
 const addButton = document.querySelectorAll(".add")
 const cont = document.querySelector("#contagem")
 const products = [{
-        name: "BLA",
-        tag: "#1",
-        price: 100,
+        name: "Apple Watch",
+        tag: "apple-watch-sell.jpeg",
+        price: 4.059,
         qtd: 0
     },
     {
-        name: "VRAU",
-        tag: "#2",
-        price: 50,
+        name: "Thunder Black",
+        tag: "thunder-black.jpg",
+        price: 1899.090,
         qtd: 0
     },
     {
-        name: "VRII",
-        tag: "#3",
-        price: 20,
+        name: "Curren M2",
+        tag: "black-curren-m2.jpg",
+        price: 710.090,
         qtd: 0
     },
     {
         name: "VRUUMMM",
-        tag: "#4",
+        tag: " ",
         price: 500,
         qtd: 0
     }
@@ -35,7 +35,7 @@ for (let i = 0; i < addButton.length; i++) {
     })
 }
 
-displayCart()
+displayCart(totalPrice(products))
 loadCartCount()
 
 function contCart() {
@@ -82,28 +82,43 @@ function insideCart(product) {
     localStorage.setItem("cart", JSON.stringify(cartItens))
 }
 
+function totalPrice(product) {
+    let cart = JSON.parse(localStorage.getItem("cart"))
+    let total = 0
+
+    if (cart) {
+        Object.values(cart).map(item => {
+            total += item.price
+        })
+    }
+
+    return total
+}
+
 
 // **** CART  - JAVASCRIPT **** //
 
-function displayCart() {
+function displayCart(totalPrice) {
     let cart = JSON.parse(localStorage.getItem('cart'))
     let productContainer = document.querySelector(".products")
 
     if (cart && productContainer) {
         productContainer.innerHTML = " ";
         Object.values(cart).map(item => {
+            const price = item.price
+            price
             productContainer.innerHTML += `
             <div class="product">
                 <ion-icon name="close-circle"></ion-icon>
-                <img src="../images/${item.tag}.jpg">
+                <img src="../../images/${item.tag}">
                 <span>${item.name}</span>
             </div>
-            <div class="price">R$${item.price} </div>
+            <div class="price">R$ ${item.price} </div>
             <div class="quantity">
                 <span>${item.qtd}</span>
             </div>
             <div class="total">
-                R$${item.qtd * item.price}
+                R$ ${item.qtd * item.price}
             </div>
             `
         })
@@ -111,10 +126,10 @@ function displayCart() {
         productContainer.innerHTML += `
             <div class="basketTotalContainer">
                 <h4 class="basketTotalTitle">
-                    Basket Total
+                    Preço Total
                 </h4>
                 <h4 class="basketTotal">
-                    R$${500}
+                    R$ ${totalPrice}
                 </h4>
             </div>
         `
