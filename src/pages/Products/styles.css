@@ -49,16 +49,32 @@ body #menu .menu .icon-options ion-icon {
 }
 
 
+/* ==== content ==== */
+
+body #categories {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+body #categories h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+
 /* ==== OPTION BLOCKS ==== */
 
-body #content .option-blocks {
+body #categories .option-blocks {
   display: flex;
   justify-content: space-between;
   width: 1000px;
   margin: 64px auto 64px auto;
 }
 
-body #content .option-blocks .option-block {
+body #categories .option-blocks .option-block {
   background: #fff;
   border-radius: 8px;
   width: 300px;
@@ -69,17 +85,17 @@ body #content .option-blocks .option-block {
   cursor: pointer;
 }
 
-body #content .option-blocks .option-block.active {
+body #categories .option-blocks .option-block.active {
   border: 2px solid #95d5b2;
   background: #d8f3dc;
 }
 
-body #content .option-blocks .option-block div {
+body #categories .option-blocks .option-block div {
   display: flex;
   flex-direction: column;
 }
 
-body #content .option-blocks .option-block img {
+body #categories .option-blocks .option-block img {
   display: flex;
   align-items: center;
   width: 80px;
@@ -89,7 +105,7 @@ body #content .option-blocks .option-block img {
   margin: 16px auto 0 auto;
 }
 
-body #content .option-blocks .option-block h1 {
+body #categories .option-blocks .option-block h1 {
   padding: 16px;
   margin-top: 8px;
   font-size: 24px;
@@ -98,19 +114,90 @@ body #content .option-blocks .option-block h1 {
 }
 
 
-/* ==== content ==== */
+/* ==== CARDS SECTION ===== */
 
-body #content {
-  width: 100%;
-  max-width: 1200px;
-  min-width: 1200px;
-  margin: 0 auto;
-  padding: 32px;
+body #cards-section {
+  width: 1000px;
+  margin: 64px auto;
 }
 
-body #content h1 {
+body #cards-section h1 {
+  margin-bottom: 24px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+body #cards-section h1 ion-icon {
+  margin-left: 8px;
+}
+
+body #cards-section .cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 0 auto 64px auto;
+}
+
+body #cards-section .cards .card {
+  background: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 15px 15px 12px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  width: 300px;
+  height: 380px;
+  display: grid;
+  grid-template-rows: 250px 80px;
+  text-align: left;
+}
+
+body #cards-section .cards .card div {
+  display: flex;
+  flex-direction: column;
+}
+
+body #cards-section .cards .card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+body #cards-section .cards .card h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 500;
   text-align: center;
+}
+
+body #cards-section .cards .card p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12px;
+}
+
+body #cards-section .cards .card a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+body #cards-section .cards .card a:hover ion-icon {
+  animation: icon 0.5s;
+}
+
+body #cards-section .cards .card ion-icon {
+  color: #000;
+  margin-left: 8px;
+}
+
+body #cards-section .cards-link a:hover {
+  background: #000;
+  color: #fff;
 }
 
 
