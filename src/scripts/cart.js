@@ -38,6 +38,7 @@ for (let i = 0; i < addButton.length; i++) {
             totalPrice(products[i])
         } else {
             window.alert("VOCE PRECISA ESTAR LOGADO")
+            window.location.href = "../SignIn/index.html"
         }
     })
 }

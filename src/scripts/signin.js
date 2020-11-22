@@ -11,6 +11,7 @@ bLogin.addEventListener("click", () => {
         if (dados[i][2] == inEmail.value && dados[i][3] == inSenha.value) {
             error.style.display = "none"
             logado = [true, dados[i][2]]
+            limpaCart()
             localStorage.setItem("logado", logado)
             window.location.href = "../Home/index.html"
             return false;
@@ -19,3 +20,15 @@ bLogin.addEventListener("click", () => {
         }
     }
 })
+
+function limpaCart() {
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    let contCart = JSON.parse(localStorage.getItem('contCart'))
+    let totalPrice = JSON.parse(localStorage.getItem('total'))
+
+    if (cart && contCart && totalPrice) {
+        localStorage.removeItem("cart")
+        localStorage.removeItem("contCart")
+        localStorage.removeItem("total")
+    }
+}
