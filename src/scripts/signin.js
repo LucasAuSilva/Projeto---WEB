@@ -10,6 +10,8 @@ bLogin.addEventListener("click", () => {
     for (let i = 0; i < dados.length; i++) {
         if (dados[i][2] == inEmail.value && dados[i][3] == inSenha.value) {
             error.style.display = "none"
+            logado = [true, dados[i][2]]
+            localStorage.setItem("logado", logado)
             window.location.href = "../Home/index.html"
             return false;
         } else {
