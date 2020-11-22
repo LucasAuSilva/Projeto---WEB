@@ -49,71 +49,6 @@ body #menu .menu .icon-options ion-icon {
 }
 
 
-/* ==== content ==== */
-
-body #categories {
-  width: 100%;
-  max-width: 1200px;
-  min-width: 1200px;
-  margin: 0 auto;
-  padding: 32px;
-}
-
-body #categories h1 {
-  font-weight: 400;
-  text-align: center;
-}
-
-
-/* ==== OPTION BLOCKS ==== */
-
-body #categories .option-blocks {
-  display: flex;
-  justify-content: space-between;
-  width: 1000px;
-  margin: 64px auto 64px auto;
-}
-
-body #categories .option-blocks .option-block {
-  background: #fff;
-  border-radius: 8px;
-  width: 300px;
-  height: 200px;
-  display: grid;
-  text-align: left;
-  border: 2px solid #fff;
-  cursor: pointer;
-}
-
-body #categories .option-blocks .option-block.active {
-  border: 2px solid #95d5b2;
-  background: #d8f3dc;
-}
-
-body #categories .option-blocks .option-block div {
-  display: flex;
-  flex-direction: column;
-}
-
-body #categories .option-blocks .option-block img {
-  display: flex;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 8px 8px 0 0;
-  object-fit: cover;
-  margin: 16px auto 0 auto;
-}
-
-body #categories .option-blocks .option-block h1 {
-  padding: 16px;
-  margin-top: 8px;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
-
 /* ==== CARDS SECTION ===== */
 
 body #cards-section {
@@ -195,9 +130,129 @@ body #cards-section .cards .card ion-icon {
   margin-left: 8px;
 }
 
-body #cards-section .cards-link a:hover {
-  background: #000;
-  color: #fff;
+body #cards-section .cards .card a:hover ion-icon {
+  animation: movePlus 0.3s;
+}
+
+@keyframes movePlus {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+
+/* ==== content ==== */
+
+body #categories {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+body #categories h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/* ==== OPTION BLOCKS ==== */
+
+body #categories .option-blocks {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 64px auto 64px auto;
+}
+
+body #categories .option-blocks .option-block {
+  background: #fff;
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  text-align: left;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+body #categories .option-blocks .option-block.active {
+  border: 2px solid #95d5b2;
+  background: #d8f3dc;
+}
+
+body #categories .option-blocks .option-block div {
+  display: flex;
+  flex-direction: column;
+}
+
+body #categories .option-blocks .option-block img {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  margin: 16px auto 0 auto;
+}
+
+body #categories .option-blocks .option-block h1 {
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+body #smart-watches {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+body #smart-watches .lines {
+  display: flex;
+  flex-direction: column;
+}
+
+body #smart-watches .lines .line {
+  display: none;
+}
+
+body #smart-watches .lines .line.active {
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  display: initial;
+}
+
+body #smart-watches .lines .line img {
+  height: 100%;
+  padding: 8px;
+  margin-right: 16px;
+}
+
+body #smart-watches .lines .line div {
+  flex: 1;
+}
+
+body #smart-watches .lines .line a {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+body #smart-watches .lines .line a:hover ion-icon {
+  animation: movePlus 0.3s;
+}
+
+body #smart-watches .lines .line a ion-icon {
+  margin-left: 8px;
 }
 
 
