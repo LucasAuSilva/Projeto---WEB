@@ -46,6 +46,7 @@ body #menu .menu .icon-options ion-icon {
   font-size: 20px;
   cursor: pointer;
   text-align: right;
+  color: #000;
 }
 
 
@@ -148,7 +149,6 @@ body #categories {
   max-width: 1200px;
   min-width: 1200px;
   margin: 0 auto;
-  padding: 32px;
 }
 
 body #categories h1 {
@@ -298,4 +298,67 @@ body #smart-watches .lines .line a ion-icon {
 
 #footer .footer-content .social-media-links a:hover {
   border-bottom: 2px solid #000;
+}
+
+
+/* ==== RESPONSIVITY ==== */
+
+@media (max-width: 1300px) {
+  body #menu .menu {
+    width: 1000px;
+  }
+  body #categories {
+    max-width: 1000px;
+    min-width: 1000px;
+  }
+  #footer .footer-content {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body #menu .menu {
+    width: 90%;
+  }
+  body #cards-section {
+    width: 90%;
+  }
+  body #cards-section h1 {
+    margin-bottom: 24px;
+    font-weight: 400;
+    justify-content: center;
+  }
+  body #cards-section .cards {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  body #cards-section .cards .card {
+    margin: 16px 0;
+  }
+  body #categories {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  body #categories .option-blocks {
+    width: 90%;
+  }
+  body #categories {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  body #categories .option-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  body #categories .option-blocks .option-block {
+    margin: 16px 0;
+  }
+  body #smart-watches {
+    width: 90%;
+  }
+  #footer .footer-content {
+    max-width: 90%;
+  }
 }
