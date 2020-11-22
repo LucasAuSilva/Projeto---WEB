@@ -49,6 +49,55 @@ body #menu .menu .icon-options ion-icon {
 }
 
 
+/* ==== OPTION BLOCKS ==== */
+
+body #content .option-blocks {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 64px auto 64px auto;
+}
+
+body #content .option-blocks .option-block {
+  background: #fff;
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+  display: grid;
+  text-align: left;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+body #content .option-blocks .option-block.active {
+  border: 2px solid #95d5b2;
+  background: #d8f3dc;
+}
+
+body #content .option-blocks .option-block div {
+  display: flex;
+  flex-direction: column;
+}
+
+body #content .option-blocks .option-block img {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  margin: 16px auto 0 auto;
+}
+
+body #content .option-blocks .option-block h1 {
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+
 /* ==== content ==== */
 
 body #content {
