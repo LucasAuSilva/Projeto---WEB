@@ -177,28 +177,30 @@ body #presentation .menu .icon-options ion-icon {
   cursor: pointer;
 }
 
+#second-section .product img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
 #second-section .products {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-#section-second .products img {
-  width: 75px;
-}
-
-.basketTotalContainer {
+#second-section .products-container .products .basketTotalContainer {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   padding: 10px 0;
 }
 
-.basketTotalTitle {
+#second-section .products-container .products .basketTotalContainer .basketTotalTitle {
   width: 30%;
 }
 
-.basketTotal {
+#second-section .products-container .products .basketTotalContainer .basketTotal {
   width: 10%;
 }
 
