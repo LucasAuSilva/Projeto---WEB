@@ -28,8 +28,105 @@
     </div>
   </section>
 
-  <section id="content">
+  <section id="cards-section">
+    <div class="background"></div>
+
+    <h1>Os mais pedidos
+      <ion-icon name="flame"></ion-icon>
+    </h1>
+
+    <div class="cards">
+      <div class="card">
+        <img src="../../images/apple-watch-selll.jpeg" alt="Apple Watch">
+
+        <div>
+          <h1>Apple Watch</h1>
+          <p>R$ 4.059,00</p>
+        </div>
+
+        <a href="#">Adicionar ao carrinho <ion-icon name="add"></ion-icon></a>
+      </div>
+
+      <div class="card">
+        <img src="../../images/thunder-black.jpg" alt="Thunder Watch">
+
+        <div>
+          <h1>Thunder Black</h1>
+          <p>R$ 1.899,90</p>
+        </div>
+
+        <a href="#">Adicionar ao carrinho <ion-icon name="add"></ion-icon></a>
+      </div>
+
+      <div class="card">
+        <img src="../../images/black-curren-m2.jpg" alt="Apple Watch">
+
+        <div>
+          <h1>Curren M2</h1>
+          <p>R$ 710,09</p>
+        </div>
+
+        <a href="#">Adicionar ao carrinho <ion-icon name="add"></ion-icon></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
     <h1>Selecione uma categoria ou veja os itens mais procurados!</h1>
+
+    <div class="option-blocks">
+      <div class="option-block" id="option-block-one" onclick="addColor('one')">
+        <img src="../../images/watch-outline.svg" alt="Apple Watch">
+
+        <div>
+          <h1>Smart Watches</h1>
+        </div>
+      </div>
+
+      <div class="option-block" id="option-block-two" onclick="addColor('two')">
+        <img src="../../images/time-outline.svg" alt="Apple Watch">
+
+        <div>
+          <h1>Relógios analógicos</h1>
+        </div>
+      </div>
+
+      <div class="option-block" id="option-block-three" onclick="addColor('three')">
+        <img src="../../images/timer-outline.svg" alt="Apple Watch">
+
+        <div>
+          <h1>Relógios digitais</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="smart-watches">
+    <div class="lines">
+
+      <div class="line" id="line-one">
+        <img src="../../images/analogic-watch.jpg" alt="" srcset="" id="line-one-img">
+
+        <div>
+          <h1 id="line-one-title">Nome do relogio</h1>
+          <p id="line-one-price">Preço</p>
+        </div>
+
+        <a href="#">Adicionar ao carrinho <ion-icon name="add"></ion-icon></a>
+      </div>
+
+      <div class="line" id="line-one">
+        <img src="../../images/analogic-watch.jpg" alt="" srcset="" id="line-one-img">
+
+        <div>
+          <h1 id="line-one-title">Nome do relogio</h1>
+          <p id="line-one-price">Preço</p>
+        </div>
+
+        <a href="#">Adicionar ao carrinho <ion-icon name="add"></ion-icon></a>
+      </div>
+
+    </div>
   </section>
 
   <section id="footer">
@@ -51,5 +148,6 @@
 
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
+<script src="../../scripts/products.js"></script>
 
 </html>
