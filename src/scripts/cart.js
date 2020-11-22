@@ -164,8 +164,6 @@ function displayCart(totalPrice) {
     if (cart && productContainer) {
         productContainer.innerHTML = " ";
         Object.values(cart).map(item => {
-            const price = item.price
-            price
             productContainer.innerHTML += `
             <div class="product">
                 <ion-icon name="close-circle"></ion-icon>
