@@ -13,10 +13,8 @@ body #presentation {
   width: 100%;
   max-height: 100vh;
   height: 100%;
-
   box-sizing: border-box;
-
-  background: url("../../images/initial.jpeg") rgba(0,0,0,0.4) no-repeat;
+  background: url("../../images/initial.jpeg") rgba(0, 0, 0, 0.4) no-repeat;
   background-size: cover;
 }
 
@@ -30,17 +28,14 @@ body #presentation .view {
   width: 100%;
   max-height: 100vh;
   height: 100%;
-
   position: absolute;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 body #presentation .menu {
   position: relative;
-
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-
   width: 1200px;
   padding: 32px;
   margin: 0 auto;
@@ -55,9 +50,7 @@ body #presentation .menu .options a {
   text-decoration: none;
   color: #fff;
   margin: 0 24px;
-
   border-bottom: 2px solid transparent;
-
   transition: border 0.2s;
 }
 
@@ -75,16 +68,13 @@ body #presentation .menu .icon-options ion-icon {
   color: #fff;
   margin: 0 8px;
   font-size: 20px;
-
   cursor: pointer;
-
   text-align: right;
 }
 
 #presentation .presentation-text {
   position: relative;
   margin-top: 180px;
-
   color: #fff;
   text-align: center;
 }
@@ -103,7 +93,6 @@ body #presentation .menu .icon-options ion-icon {
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 8px;
-
   transition: all 0.2s;
 }
 
@@ -111,10 +100,6 @@ body #presentation .menu .icon-options ion-icon {
   background: #fff;
   color: #000;
 }
-
-
-
-
 
 
 /* ====== SECOND SECTION ====== */
@@ -126,7 +111,6 @@ body #second-section {
   max-height: 100vh;
   min-height: 100vh;
   height: 100%;
-
   color: black;
 }
 
@@ -138,7 +122,7 @@ body #second-section .background {
   border-color: transparent transparent #ad9e8734 transparent;
 }
 
-body #second-section > h1 {
+body #second-section>h1 {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
@@ -148,20 +132,16 @@ body #second-section > h1 {
 body #second-section .cards {
   display: flex;
   justify-content: space-between;
-
   width: 1000px;
   margin: 0 auto 64px auto;
 }
 
 body #second-section .cards .card {
   background: #fff;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2),
-  15px 15px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 15px 15px 12px rgba(0, 0, 0, 0.02);
   border-radius: 8px;
-
   width: 300px;
   height: 380px;
-
   display: grid;
   grid-template-rows: 150px 164px 80px;
   text-align: left;
@@ -176,7 +156,6 @@ body #second-section .cards .card img {
   width: 100%;
   height: 150px;
   border-radius: 8px 8px 0 0;
-
   object-fit: cover;
 }
 
@@ -197,7 +176,6 @@ body #second-section .cards .card a {
   display: flex;
   align-items: center;
   color: #000;
-
   align-items: center;
   justify-content: center;
 }
@@ -223,18 +201,13 @@ body #second-section .cards-link a {
   padding: 8px 16px;
   border-radius: 8px;
   transition: all 0.2s;
-  box-shadow: 0 0 38px rgba(0, 0, 0, 0.2),
-  15px 15px 12px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.2), 15px 15px 12px rgba(0, 0, 0, 0.02);
 }
 
 body #second-section .cards-link a:hover {
   background: #000;
   color: #fff;
 }
-
-
-
-
 
 
 /* ====== THIRD SECTION ======= */
@@ -246,7 +219,6 @@ body #third-section {
   max-height: 100vh;
   min-height: 100vh;
   height: 100%;
-
   color: black;
   background: #ad9e8734;
 }
@@ -256,13 +228,11 @@ body #third-section .third-section-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   max-width: 1000px;
   width: 100%;
   max-height: 100vh;
   min-height: 100vh;
   height: 100%;
-
   margin: 0 auto;
 }
 
@@ -279,14 +249,8 @@ body #third-section .third-section-content iframe {
 }
 
 
-
-
-
-
-
-
-
 /* ======= Client Depositions ====== */
+
 body #client-depositions {
   max-width: 100vw;
   min-width: 100vw;
@@ -294,10 +258,8 @@ body #client-depositions {
   max-height: 100vh;
   min-height: 100vh;
   height: 100%;
-
   color: #000;
   position: relative;
-
   display: flex;
 }
 
@@ -311,7 +273,6 @@ body #client-depositions .depositions {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -329,18 +290,15 @@ body #client-depositions .depositions .second-column {
 
 body #client-depositions .depositions .deposition {
   background: #fff;
-
   max-height: 180px;
   min-height: 180px;
   height: 100%;
   max-width: 460px;
   min-width: 460px;
   width: 100%;
-
   border-radius: 8px;
   padding: 32px 16px;
   margin: 16px;
-
   display: flex;
   flex-direction: row;
 }
@@ -361,13 +319,8 @@ body #client-depositions .depositions .deposition p {
 }
 
 
-
-
-
-
-
-
 /* ====== Contact Infos ====== */
+
 #contact-infos {
   max-width: 100vw;
   min-width: 100vw;
@@ -375,13 +328,8 @@ body #client-depositions .depositions .deposition p {
   max-height: 90vh;
   min-height: 90vh;
   height: 100%;
-
   color: #000;
-
-  background: linear-gradient(
-    0deg,
-    #E6E5E3 0%,
-   #F5F8FA 100%)
+  background: linear-gradient( 0deg, #E6E5E3 0%, #F5F8FA 100%)
 }
 
 #contact-infos h1 {
@@ -391,13 +339,11 @@ body #client-depositions .depositions .deposition p {
   padding: 48px 0;
 }
 
-
 #contact-infos .contact-infos-content {
   max-width: 1000px;
   width: 100%;
   height: 400px;
   margin: 0 auto;
-
   display: flex;
 }
 
@@ -410,11 +356,9 @@ body #client-depositions .depositions .deposition p {
 
 #contact-infos .contact-infos-content .info-cards {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   flex-direction: column;
-
   width: 100%;
-
   margin-left: 32px;
 }
 
@@ -422,12 +366,9 @@ body #client-depositions .depositions .deposition p {
   width: 450px;
   height: 120px;
   border-radius: 16px;
-
   background: #fff;
-
   display: flex;
   align-items: center;
-
   text-decoration: none;
   color: #000;
 }
@@ -445,7 +386,6 @@ body #client-depositions .depositions .deposition p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
 }
 
@@ -459,18 +399,13 @@ body #client-depositions .depositions .deposition p {
   margin-bottom: 8px;
 }
 
-
-
-
 @keyframes icon {
   25% {
     transform: translateX(8px);
   }
-
   50% {
     transform: translateX(0px);
   }
-
   75% {
     transform: translateX(8px);
   }
@@ -480,12 +415,8 @@ body #client-depositions .depositions .deposition p {
 }
 
 
-
-
-
-
-
 /* ====== FOOTER ====== */
+
 #footer {
   max-width: 100vw;
   min-width: 100vw;
@@ -493,17 +424,15 @@ body #client-depositions .depositions .deposition p {
   max-height: 200px;
   min-height: 200px;
   height: 100%;
-
   color: #000;
   background: #E6E5E3;
 }
+
 #footer .footer-content {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-
   height: 200px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -529,14 +458,8 @@ body #client-depositions .depositions .deposition p {
 }
 
 
-
-
-
-
-
-
-
 /* ====== RESPONSIVITY ====== */
+
 @media (max-width: 1200px) {
   #presentation .menu,
   #second-section,
@@ -547,15 +470,12 @@ body #client-depositions .depositions .deposition p {
     max-width: 90vw;
     width: 100%;
   }
-
   body #second-section .cards {
     width: 950px;
   }
-
   body #second-section .cards .card {
     width: 280px;
   }
-
   #footer .footer-content {
     max-width: 90vw;
     width: 100%;
@@ -568,83 +488,61 @@ body #client-depositions .depositions .deposition p {
     min-height: 800px;
     height: 100%;
   }
-
   body #second-section .background {
     border-width: 0 0 800px 100vw;
   }
-
   body #second-section .cards {
     flex-direction: column;
     max-width: 90vw;
     width: 100%;
-
     margin: 0 auto;
   }
-  
   body #second-section .cards .card {
     width: 100%;
     height: 180px;
     margin: 12px 0;
-  
     display: flex;
     text-align: left;
   }
-  
   body #second-section .cards .card img {
     width: 30%;
     height: 100%;
     border-radius: 8px 0 0 8px;
   }
-
   body #second-section .cards .card div {
     align-items: flex-start;
     width: 50%;
     margin-left: 16px;
   }
-
   body #second-section .cards-link {
     margin-top: 24px;
   }
-
-
-
-
   body #third-section {
     max-height: 800px;
     min-height: 800px;
     height: 100%;
   }
-
   body #third-section h1 {
     margin-top: 80px;
   }
-
   body #third-section .third-section-content iframe {
     width: 640px;
     height: 360px;
   }
-
-
-
-
-
   body #client-depositions {
     max-height: 800px;
     min-height: 800px;
     height: 100%;
   }
-
   body #client-depositions .depositions {
     max-height: 800px;
     min-height: 800px;
     height: 100%;
   }
-
   body #client-depositions .depositions {
     flex-direction: column;
     margin: 0 auto;
   }
-
   body #client-depositions .depositions .deposition {
     max-width: 60%;
     min-width: 60%;
@@ -653,58 +551,46 @@ body #client-depositions .depositions .deposition p {
     min-height: 140px;
     height: 100%;
   }
-
   body #client-depositions .depositions .first-column,
   body #client-depositions .depositions .second-column {
     align-items: center;
   }
-
-
-
   body #contact-infos h1 {
     max-width: 100vw;
     min-width: 100vw;
     width: 100%;
   }
-
   body #contact-infos .contact-infos-content {
     flex-direction: column;
     max-width: 90vw;
     margin: 0 auto;
   }
-
   #contact-infos #map iframe {
     width: 100%;
     height: 300px;
     border: 0;
     border-radius: 16px;
   }
-
   #contact-infos .contact-infos-content .info-cards {
     flex-direction: row;
     margin-left: 0;
     margin-top: 24px;
   }
-
   #contact-infos .contact-infos-content .info-cards .info-card {
     width: 32%;
     height: 120px;
     border-radius: 16px;
-
     display: flex;
     align-items: center;
   }
-
   #contact-infos .contact-infos-content .info-cards .info-card img {
     margin: 0 24px;
     width: 32px;
   }
-
   #contact-infos .contact-infos-content .info-cards .info-card span {
     font-size: 20px;
     margin-bottom: 8px;
   }
-
   #contact-infos .contact-infos-content .info-cards .info-card p {
     font-size: 16px;
   }
@@ -714,16 +600,13 @@ body #client-depositions .depositions .deposition p {
   body #second-section .cards .card a {
     flex-direction: column;
   }
-
   body #contact-infos .contact-infos-content .info-cards {
     flex-direction: column;
   }
-
   body #contact-infos .contact-infos-content .info-cards .info-card {
     width: 100%;
     margin-top: 8px;
   }
-
   body #client-depositions .depositions .deposition {
     max-width: 80%;
     min-width: 80%;
@@ -736,47 +619,36 @@ body #client-depositions .depositions .deposition p {
     min-height: initial;
     height: initial;
   }
-
   body #second-section .background {
     border-width: 0 0 0 100vw;
   }
-
   body #second-section .cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
     width: 1000px;
     margin: 0 auto 64px auto;
   }
-  
   body #second-section .cards .card {
     background: #fff;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2),
-    15px 15px 12px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 15px 15px 12px rgba(0, 0, 0, 0.02);
     border-radius: 8px;
-  
     width: 300px;
     height: 380px;
-  
     display: grid;
     grid-template-rows: 150px 164px 80px;
     text-align: left;
   }
-  
   body #second-section .cards .card div {
     flex-direction: column;
     width: 100%;
   }
-  
   body #second-section .cards .card img {
     width: 100%;
     height: 150px;
     border-radius: 8px 8px 0 0;
-  
     object-fit: cover;
   }
-  
   body #second-section .cards .card h1 {
     padding: 16px;
     margin-top: 8px;
@@ -784,36 +656,24 @@ body #client-depositions .depositions .deposition p {
     font-weight: 500;
     text-align: center;
   }
-  
   body #second-section .cards .card p {
     font-size: 16px;
     padding: 16px;
   }
-
   body #second-section .cards .card a {
     flex-direction: row;
   }
-
   body #third-section .third-section-content h1 {
     margin-top: 0;
   }
-
   body #third-section .third-section-content iframe {
     width: 540px;
     height: 260px;
   }
-
   body #third-section {
-    background: linear-gradient(
-      0deg,
-      #E6E5E3 0%,
-     #F5F8FA 100%)
+    background: linear-gradient( 0deg, #E6E5E3 0%, #F5F8FA 100%)
   }
 }
-
-
-
-
 
 @media (max-height: 700px) {
   body #second-section {
@@ -821,7 +681,6 @@ body #client-depositions .depositions .deposition p {
     min-height: 800px;
     height: 100%;
   }
-
   body #second-section .background {
     border-width: 0 0 800px 100vw;
   }
