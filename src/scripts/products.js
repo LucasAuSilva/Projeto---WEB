@@ -85,7 +85,6 @@ function addContent(position) {
     document.getElementById('line-two-img').src = '../../images/digital-2.jpeg';
     document.getElementById('line-two-title').innerHTML = 'Skmei Sport';
     document.getElementById('line-two-price').innerHTML = 'R$ 189,00';
-
   }
 }
 
