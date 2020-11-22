@@ -171,6 +171,13 @@ body #cards-section .cards .card h1 {
   text-align: center;
 }
 
+body #cards-section .cards .card p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -12px;
+}
+
 body #cards-section .cards .card a {
   display: flex;
   align-items: center;
