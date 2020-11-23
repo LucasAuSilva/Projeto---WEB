@@ -28,6 +28,11 @@ body #presentation .menu {
   margin: 0 auto;
 }
 
+body #presentation .menu>p {
+  font-family: 'Nerko One', sans-serif;
+  font-size: 32px;
+}
+
 body #presentation .menu .options {
   display: flex;
   margin: 0 auto;
@@ -218,8 +223,9 @@ body #presentation .menu .icon-options ion-icon {
   padding: 32px;
 }
 
-#footer .footer-content .infos h1 {
-  font-weight: 500;
+#footer .footer-content .infos .logo {
+  font-family: 'Nerko One', sans-serif;
+  font-size: 32px;
 }
 
 #footer .footer-content .social-media-links {

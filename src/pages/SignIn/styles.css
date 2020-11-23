@@ -15,6 +15,11 @@ body #menu .menu {
   margin: 0 auto;
 }
 
+body #menu .menu>p {
+  font-family: 'Nerko One', sans-serif;
+  font-size: 32px;
+}
+
 body #menu .menu .options {
   display: flex;
   margin: 0 auto;
