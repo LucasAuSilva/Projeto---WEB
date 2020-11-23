@@ -132,3 +132,24 @@ body form #handle-form:hover {
   background-color: #ffffff9f;
   transition: all 0.2s;
 }
+
+@media (max-width: 1250px) {
+  body #menu .menu {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  body #menu .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+  }
+  body #menu .menu .options {
+    flex-direction: column;
+    text-align: center;
+    margin: 24px;
+  }
+}

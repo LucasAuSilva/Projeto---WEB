@@ -362,3 +362,26 @@ body #smart-watches .lines .line a ion-icon {
     max-width: 90%;
   }
 }
+
+@media (max-width: 600px) {
+  body #menu .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+  }
+  body #menu .menu .options {
+    flex-direction: column;
+    text-align: center;
+    margin: 24px;
+  }
+  body #smart-watches .lines .line img {
+    height: 150px;
+  }
+  body #smart-watches .lines .line.active {
+    flex-direction: column;
+    height: 250px;
+    text-align: center;
+  }
+}
