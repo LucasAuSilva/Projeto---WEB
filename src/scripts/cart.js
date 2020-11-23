@@ -2,37 +2,21 @@
 
 const logado = localStorage.getItem('logado')
 const addButton = document.getElementsByClassName('add')
-const category = document.querySelectorAll('.option-block')
+const category = document.getElementsByClassName('option-block')
 const cont = document.querySelector("#contagem")
-const products = [{
-    name: "Apple Watch",
-    tag: "apple-watch-sell.jpeg",
-    price: 4059.00,
-    qtd: 0
-  },
-  {
-    name: "Thunder Black",
-    tag: "thunder-black.jpg",
-    price: 1899.90,
-    qtd: 0
-  },
-  {
-    name: "Curren M2",
-    tag: "black-curren-m2.jpg",
-    price: 710.09,
-    qtd: 0
-  }
-]
+
 
 for (let x = 0; x < category.length; x++) {
   category[x].addEventListener("click", () => {
-    categoryOpen(x, products)
+    products = categoryOpen(x)
   })
 }
 
 for (let i = 0; i < addButton.length; i++) {
+  products = categoryOpen(4)
   addButton[i].addEventListener("click", () => {
     if (logado != null && logado[0]) {
+      console.log(products)
       contCart()
       insideCart(products[i])
       totalPrice(products[i])
@@ -100,56 +84,135 @@ function totalPrice(product) {
   }
 }
 
-function categoryOpen(position, products) {
-  if (products.length > 3) {
-    products = products.splice(3, 3)
-  }
+function categoryOpen(position) {
   if (position == 0) {
-    products.push({
+    let products = [{
+        name: "Apple Watch",
+        tag: "apple-watch-sell.jpeg",
+        price: 4059.00,
+        qtd: 0
+      },
+      {
+        name: "Thunder Black",
+        tag: "thunder-black.jpg",
+        price: 1899.90,
+        qtd: 0
+      },
+      {
+        name: "Curren M2",
+        tag: "black-curren-m2.jpg",
+        price: 710.09,
+        qtd: 0
+      },
+      {
       name: "Apple Watch",
       tag: "apple-watch-sell.jpeg",
       price: 4059.00,
       qtd: 0
-    }, {
+      }, 
+      {
       name: "Samsung SmartWatch",
       tag: "samsumg-watch.jpg",
       price: 899.00,
       qtd: 0
-    }, {
+      }, 
+      {
       name: "Samsumg SmartWatch",
       tag: "miband.jpg",
       price: 300.00,
       qtd: 0
-    })
+      }]
+      return products
   } else if (position == 1) {
-    products.push({
+    let products = [{
+      name: "Apple Watch",
+      tag: "apple-watch-sell.jpeg",
+      price: 4059.00,
+      qtd: 0
+      },
+      {
+      name: "Thunder Black",
+      tag: "thunder-black.jpg",
+      price: 1899.90,
+      qtd: 0
+      },
+      {
+      name: "Curren M2",
+      tag: "black-curren-m2.jpg",
+      price: 710.09,
+      qtd: 0
+      }, 
+      {
       name: "Geneva Romans",
       tag: "geneva-watch.jpg",
       price: 2339.00,
       qtd: 0
-    }, {
+      }, 
+      {
       name: "Thunder Black",
       tag: "thunder-black.jpg",
       price: 1899.00,
       qtd: 0
-    }, {
+      }, 
+      {
       name: "Curren Olt Town",
       tag: "curren-old-town.jpg",
       price: 3720.00,
       qtd: 0
-    })
+    }]
+    return products
   } else if (position == 2) {
-    products.push({
+    let products = [{
+      name: "Apple Watch",
+      tag: "apple-watch-sell.jpeg",
+      price: 4059.00,
+      qtd: 0
+      },
+      {
+      name: "Thunder Black",
+      tag: "thunder-black.jpg",
+      price: 1899.90,
+      qtd: 0
+      },
+      {
+      name: "Curren M2",
+      tag: "black-curren-m2.jpg",
+      price: 710.09,
+      qtd: 0
+      }, 
+      {
       name: "X-Games Master Boy",
       tag: "digital-1.jpg",
       price: 349.00,
       qtd: 0
-    }, {
+      }, 
+      {
       name: "Skmei Sport",
       tag: "digital-2.jpg",
       price: 189.00,
       qtd: 0
-    })
+    }]
+    return products
+  } else {
+    let products = [{
+      name: "Apple Watch",
+      tag: "apple-watch-sell.jpeg",
+      price: 4059.00,
+      qtd: 0
+    },
+    {
+      name: "Thunder Black",
+      tag: "thunder-black.jpg",
+      price: 1899.90,
+      qtd: 0
+    },
+    {
+      name: "Curren M2",
+      tag: "black-curren-m2.jpg",
+      price: 710.09,
+      qtd: 0
+    }]
+    return products
   }
 }
 
