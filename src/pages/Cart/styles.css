@@ -215,6 +215,7 @@ body #presentation .menu .icon-options ion-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 32px;
 }
 
 #footer .footer-content .infos h1 {
@@ -236,6 +237,12 @@ body #presentation .menu .icon-options ion-icon {
   border-bottom: 2px solid #000;
 }
 
+@media (max-width: 1250px) {
+  body #presentation .menu {
+    width: 90%;
+  }
+}
+
 @media (max-width: 680px) {
   body #presentation .view .menu {
     display: flex;
@@ -248,5 +255,9 @@ body #presentation .menu .icon-options ion-icon {
     flex-direction: column;
     text-align: center;
     margin: 24px;
+  }
+  #footer {
+    max-width: 90%;
+    min-width: 90%;
   }
 }

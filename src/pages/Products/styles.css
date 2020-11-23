@@ -114,15 +114,17 @@ body #cards-section .cards .card p {
   margin-top: -12px;
 }
 
-body #cards-section .cards .card a {
+body #cards-section .cards .card .add {
   display: flex;
+  flex-direction: row;
   align-items: center;
   color: #000;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-body #cards-section .cards .card a:hover ion-icon {
+body #cards-section .cards .card .add:hover ion-icon {
   animation: icon 0.5s;
 }
 
@@ -240,19 +242,21 @@ body #smart-watches .lines .line div {
   flex: 1;
 }
 
-body #smart-watches .lines .line a {
+body #smart-watches .lines .line .add {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   margin-right: 16px;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
-body #smart-watches .lines .line a:hover ion-icon {
+body #smart-watches .lines .line .add:hover ion-icon {
   animation: movePlus 0.3s;
 }
 
-body #smart-watches .lines .line a ion-icon {
+body #smart-watches .lines .line .add ion-icon {
   margin-left: 8px;
 }
 
