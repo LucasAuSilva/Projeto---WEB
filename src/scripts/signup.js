@@ -54,6 +54,6 @@ submitButton.addEventListener('click', () => {
                 localStorage.setItem("register", JSON.stringify(dado))
             }
         }
-        window.location.href = "../SignIn/signin.html"
+        window.location.href = "../SignIn/index.html"
     }
 })

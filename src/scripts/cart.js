@@ -1,5 +1,6 @@
 // **** PRODUCTS - JAVASCRIPT **** //
 
+const logado = localStorage.getItem('logado')
 const addButton = document.querySelectorAll('[name="add"]')
 const category = document.querySelectorAll('.option-block')
 const cont = document.querySelector("#contagem")
@@ -31,12 +32,18 @@ for (let x = 0; x < category.length; x++) {
 
 for (let i = 0; i < addButton.length; i++) {
     addButton[i].addEventListener("click", () => {
-        contCart()
-        insideCart(products[i])
+        if (logado != null && logado[0]) {
+            contCart()
+            insideCart(products[i])
+            totalPrice(products[i])
+        } else {
+            window.alert("VOCE PRECISA ESTAR LOGADO")
+            window.location.href = "../SignIn/index.html"
+        }
     })
 }
 
-displayCart(totalPrice(products))
+displayCart()
 loadCartCount()
 
 function contCart() {
@@ -84,16 +91,13 @@ function insideCart(product) {
 }
 
 function totalPrice(product) {
-    let cart = JSON.parse(localStorage.getItem("cart"))
-    let total = 0
+    let totalPrice = parseInt(localStorage.getItem('total'))
 
-    if (cart) {
-        Object.values(cart).map(item => {
-            total += item.price
-        })
+    if (totalPrice) {
+        localStorage.setItem('total', parseFloat(totalPrice) + product.price)
+    } else {
+        localStorage.setItem('total', product.price)
     }
-
-    return total
 }
 
 function categoryOpen(position, products) {
@@ -157,18 +161,17 @@ function categoryOpen(position, products) {
 
 // **** CART  - JAVASCRIPT **** //
 
-function displayCart(totalPrice) {
+function displayCart() {
     let cart = JSON.parse(localStorage.getItem('cart'))
+    let totalPrice = JSON.parse(localStorage.getItem('total'))
     let productContainer = document.querySelector(".products")
 
     if (cart && productContainer) {
         productContainer.innerHTML = " ";
         Object.values(cart).map(item => {
-            const price = item.price
-            price
             productContainer.innerHTML += `
             <div class="product">
-                <ion-icon name="close-circle"></ion-icon>
+                <ion-icon name="close-circle" class=".remove-button"></ion-icon>
                 <img src="../../images/${item.tag}">
                 <span>${item.name}</span>
             </div>
@@ -193,4 +196,10 @@ function displayCart(totalPrice) {
             </div>
         `
     }
+}
+
+function rmvQtd(tag) {
+    let cart = JSON.parse(localStorage.getItem('cart'))
+
+    console.log(tag)
 }
